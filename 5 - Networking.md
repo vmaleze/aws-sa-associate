@@ -97,6 +97,7 @@
 
 * Can be public or private
 * DNS name
+* Connection Draining => Allows to gracefully terminate a server without affecting users
 
 ### Application Load Balancer (HTTP, HTTPS)
 
@@ -110,3 +111,26 @@
 * Operates at the connection level
 
 ### Classic Load Balancer (Deprecated. HTTP, HTTPS and TCP)
+
+* Avoid using
+* Lowest cost
+
+## High Availablity
+
+* Your application can recover from a failure or roll over to a secondary source within an acceptable amount of degraded performance time
+
+## Route 53
+
+* Highly available and scalable DNS service
+* Global service
+* Routing policies :
+  * Simple
+  * Weighted
+  * Latency
+  * Geolocation
+  * Geoproximity
+  * Health check / Failover (Define a primary route and a standby route)
+  * Multi-value answers (Like round robin)
+* Check [record sets](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/ResourceRecordTypes.html)
+* CNAME => Domain name to domain name
+* Alias => Domain name to an aws only domain name
