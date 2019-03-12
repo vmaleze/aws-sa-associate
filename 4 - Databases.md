@@ -6,12 +6,13 @@
 
 * Managed Database as a service
 * No access to the actual server
+* Max size of the DB is 32 TB
 * Six availables engines
   * Oracle
   * SQL Server
-  * MariaDB
-  * MySQL
-  * Postgresql
+  * MariaDB (Read replica OK)
+  * MySQL (Read replica OK)
+  * Postgresql (Read replica OK)
   * Aurora
 * Multi AZ
   * Sync replication to another DB in another AZ.
@@ -35,7 +36,8 @@ You can also do a manual backup but you need to purge it manually
 
 ### Aurora
 
-* Data is mirrored in six copies in 3 AZ by default.
+* Max size of the DB is 64 TB
+* Data is mirrored in six DC in 3 AZ by default.
 * Read replicas can be promoted as a master
 * Master and replicas share the storage thanks to data mirroring
 * You don't have multi AZ or Read replicas. Only Aurora Replica
@@ -48,7 +50,7 @@ You can also do a manual backup but you need to purge it manually
 * Clone is done with a one click button
 * Backtrack
   * You can bring your data back to the past really fast
-* Limit to 64 GB of ram
+* Always choose aurora when possible
 
 ### Redshift
 
@@ -78,6 +80,7 @@ You can also do a manual backup but you need to purge it manually
 * Used a lot in gaming / temporary data (online cart)
 * By default, SSL is activated
 * Permission can be defined at the item level
+* Unlimited storage
 
 ### ElastiCache
 
