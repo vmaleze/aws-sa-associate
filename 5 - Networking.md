@@ -6,7 +6,7 @@
 * Private network on the cloud
 * CIDR represents the range of ips you can have in your network. (10.2.0.0/16 => '/16' represents the number of bites that are locked (ie. 10.2))
   * Max range is /16 and Lowest is /28
-* Tenancy : Shared or dedicated
+* Tenancy : Default or dedicated
 * VPC is divided in subnets
 * Supports ipv4 and ipv6
 * Multi VPC is best suited for small company
@@ -56,3 +56,57 @@
 
 * Stateless service (You need to allow / deny trafic both inboud and outbound)
 * Associated to the subnet
+
+## Virtual Private Gatway
+
+* Service managed by AWS and auto scaled for free
+* Extending On-Premises Network to AWS
+  * VPN Connection (AWS (Virtual Gateway) - (Customer Gateway) Remote network(s))
+    * Not extremely reliable
+    * Not secured enough
+  * Direct connect (DX)
+    * Dedicated connection to a phyical line (DX partner) to AWS
+    * More secured / reliable
+    * 1 to 10 Gb/s
+* Both solution can work in parrallel
+
+## VPC Peering
+
+* Connect VPCs as if they were in the same network
+* IP Spaces cannot overlap
+* Transitive relationships are not supported
+* Peergon can be done from 2 VPCs in different regions / accounts
+* You have to configure the route tables of the 2 VPCs
+
+## Transit Gateway
+
+* Connects up to 5000 VPCs and on premises env
+* Act as a hub for all trafic
+* VPN Connections available. Allows isolation of the trafic
+
+## VPC Endpoints
+
+* Connect EC2 instances to services outside of your VPC without leaving AWS
+* Gateway endpoint => Route inside the route table of the subnet
+  * S3
+  * DynamoDB
+* Interface Enpoint
+  * Network interface that make private the communication towards AWS services
+
+## ELB (Elastic Load Balancers)
+
+* Can be public or private
+* DNS name
+
+### Application Load Balancer (HTTP, HTTPS)
+
+* Operates at the request level
+* Host or Path based routing
+
+### Network Load Balancer (TCP)
+
+* Use for extreme performance
+* Allows for a static IP
+* Operates at the connection level
+
+### Classic Load Balancer (Deprecated. HTTP, HTTPS and TCP)
