@@ -2,9 +2,10 @@
 
 * Global Service
 * Free service
-* Manage Users / Groups / Roles
-* Access Key and Secret key are used for programmatic access (API / SDK / CLI)
+* Manage Users / Groups / Roles and assign policies
 * Policy => Actual security resource
+* Users can have programmatic access and console access
+* Access Key and Secret key are used for programmatic access (API / SDK / CLI)
 * Only reach the API level (ie. cannot act on the resource feature itself). Will work on fully managed services (ex: DynamoDB)
 
 ## Roles
@@ -15,6 +16,7 @@
   * Services
   * Cross account access
   * Federations
+* STS is a service that allows you to assume a role by delivering a temporary token
 
 ## Policies
 

@@ -57,7 +57,7 @@
 * Stateless service (You need to allow / deny trafic both inboud and outbound)
 * Associated to the subnet
 
-## Virtual Private Gatway
+## Virtual Private Gateway
 
 * Service managed by AWS and auto scaled for free
 * Extending On-Premises Network to AWS
@@ -112,7 +112,7 @@
 
 ### Classic Load Balancer (Deprecated. HTTP, HTTPS and TCP)
 
-* Avoid using
+* Simple solution
 * Lowest cost
 
 ## High Availablity
