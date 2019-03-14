@@ -5,7 +5,7 @@
 * Infrastructure as a code
 * Works with deltas when redeploying the same CloudFormation
 * Made of stacks
-* You can have multi stacks templates and reference them through s3
+* You can have multi stacks templates and reference them through s3 for exemple
 
 ## Systems Manager
 
