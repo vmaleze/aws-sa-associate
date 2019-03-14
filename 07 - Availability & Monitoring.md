@@ -83,3 +83,8 @@
 * DynamoDB
   * Autoscaling by default for all tables depending on the capacity unit you specified
   * You can do it on demand. (Managed by AWS)
+
+## RPO / RTO
+
+* RPO is the data lost
+* RTO is the time to bring your service back up
