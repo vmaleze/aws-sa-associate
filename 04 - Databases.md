@@ -56,6 +56,7 @@ You can also do a manual backup but you need to purge it manually
 
 * Used for datawarehouse
 * Postgres compatible
+* To use a VPC endpoint, you need to enables VPC enhanced routing
 
 ## Non Relational (No SQL)
 

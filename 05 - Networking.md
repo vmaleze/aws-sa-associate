@@ -26,10 +26,14 @@
   * For each AZ, create 1 public subnet and 1 private subnet
   * Make your private subnets bigger than the public ones
 
-## Route Gateway
+## IGW
+
+* Allows access to the internet
+
+## Nat Gateway
 
 * Only services you have to pay for in networking services
-* Gateway that provides your private services to access the internet (Only in one way)
+* Gateway that provides your private services to access the internet (Only in one way) via the IGW
 
 ## ENI (Elastic Network Interfaces)
 
