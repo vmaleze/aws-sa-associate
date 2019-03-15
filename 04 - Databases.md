@@ -17,7 +17,7 @@
 * Multi AZ
   * Sync replication to another DB in another AZ.
   * Works as Master/Slave. If the master fail, the slave becomes the master.
-  * Backups are in the slave (except for the Sql server)
+  * Backups are done via the slave (except for the Sql server)
 * Encryption
   * Enabled or disabled at creation
   * EBS behind the scene

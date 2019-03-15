@@ -4,7 +4,7 @@
 
 * Factors
   * Fault tolerance => Built in redundancy
-  * Scalability => Acoomodate growth
+  * Scalability => Accomodate growth
   * Recoverability => Restoring services
 * Autoscaling
 
@@ -78,8 +78,9 @@
   * Scales automatically
   * Good for spiky, unpredictable workloads
 * RDS
-  * Scales writes with Database sharding.
-  * SCal vertically by changing the type of the underneath server
+  * Read replicas
+  * Scale writes with Database sharding.
+  * Scales vertically by changing the type of the underneath server
 * DynamoDB
   * Autoscaling by default for all tables depending on the capacity unit you specified
   * You can do it on demand. (Managed by AWS)
